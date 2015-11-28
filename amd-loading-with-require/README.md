@@ -5,10 +5,10 @@ This is an example showing how to use RequireJS to configure and load TrackJs.
 
 Be sure to set your token on the configuration option in `/scripts/trackerConfig.js`.
 
-{% highlight bash %}
+```bash 
 # If it's not already installed
 npm install --global http-server
 
 http-server
 # Navigate to localhost:8080
-{% endhighlight %}
+```

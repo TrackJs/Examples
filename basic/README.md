@@ -5,11 +5,11 @@ This is a very simple example with no other configuration options other than the
 
 Be sure to set your token on the configuration object in `index.html`.
 
-{% highlight bash %}
+```bash 
 # if it's not already installed
 npm install -g http-server
 
 http-server .
 # Load http://localhost:8080 in your browser
 
-{% endhighlight %}
+```

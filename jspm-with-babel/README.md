@@ -5,7 +5,7 @@ This is an example showing how to use RequireJS to configure and load TrackJs.
 
 Be sure to set your token on the configuration option in `/scripts/trackerConfig.js`.
 
-{% highlight bash %}
+```bash 
 # If they're not already installed
 npm install --global jspm
 
@@ -16,4 +16,4 @@ jspm bundle-sfx scripts/main # bundle to a single file - other methods are suppo
 
 http-server
 # Navigate to localhost:8080
-{% endhighlight %}
+```

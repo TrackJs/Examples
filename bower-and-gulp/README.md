@@ -5,11 +5,11 @@ This is an example showing how to add TrackJS to a script bundle.  The bundle wi
 
 Be sure to set your token on the configuration object in `scripts/trackerConfig.js`
 
-{% highlight bash %}
+```bash 
 # If it's not already installed
 npm install --global gulp 
 
 npm install
 gulp run
 # Navigate to localhost:8080
-{% endhighlight %}
+```
