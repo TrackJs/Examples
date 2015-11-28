@@ -13,7 +13,7 @@ http-server
 # Navigate to localhost:8080
 ```
 
-#### What makes it work?
+#### How does it work?
 
 TrackJS needs a configuration object initialized before the script loads.  To accommodate this with Require we need to load a simple module first that contains all the configuration data, then load the tracker script itself.  Check out `/scripts/trackerConfig.js` for an example.
 

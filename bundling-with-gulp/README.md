@@ -15,7 +15,7 @@ gulp run
 ```
 
 
-#### What makes it work?
+#### How does it work?
 
 TrackJS requires that the global `_trackJs` configuration variable be initialized before TrackJS is loaded. 
 To ensure that, when we bundle our scripts with Gulp we ensure that the `/scripts/trackerConfig.js` file is specified first, followed by the tracker, and then all subsequent files.

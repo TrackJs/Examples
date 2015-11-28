@@ -18,7 +18,7 @@ http-server
 # Navigate to localhost:8080
 ```
 
-#### What makes it work?
+#### How does it work?
 
 TrackJS can be loaded any number of ways, but it works best when it's globally available.  To facilitate this we use the `browserify-shim` to load TrackJS and put it on window.
 

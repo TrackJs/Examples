@@ -16,7 +16,7 @@ gulp run
 # Navigate to localhost:8080
 ```
 
-#### What makes it work?
+#### How does it work?
 
 Within the `gulpfile` there are two steps.  
 
