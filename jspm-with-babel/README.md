@@ -12,7 +12,7 @@ npm install --global jspm
 npm install
 jspm install
 
-jspm bundle-sfx scripts/main # bundle to a single file - other methods are supported as well.
+jspm bundle-sfx scripts/main.js dist/build.js # bundle to a single file - other methods are supported as well.
 
 http-server
 # Navigate to localhost:8080
