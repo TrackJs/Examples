@@ -21,7 +21,9 @@ gulp.task("bower", function (done){
 
 gulp.task("bundle", ["bower"], function () {
 	console.log(bowerSources);
-    gulp.src(["./scripts/trackerConfig.js", "./scripts/*.js"].concat(bowerSources)) 
+    gulp.src(["./scripts/trackerConfig.js"]
+			.concat(bowerSources)
+			.concat("./scripts/*.js"))
     .pipe(uglify())
     .pipe(concat("bundle.js"))
     .pipe(gulp.dest("./dist/"));
