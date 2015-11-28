@@ -8,7 +8,9 @@ Be sure to set your token on the configuration object in `scripts/trackerConfig.
 ```bash 
 # If it's not already installed
 npm install --global gulp 
+npm install --global bower
 
+bower install
 npm install
 gulp run
 # Navigate to localhost:8080

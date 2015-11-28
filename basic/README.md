@@ -13,3 +13,19 @@ http-server .
 # Load http://localhost:8080 in your browser
 
 ```
+
+#### What makes it work?
+
+In the `<head>` tag we create a `_trackJs` global initialization object with token and other configuration values.  We then load the tracker script from the CDN.  When the script executes it looks for the `_trackJs` initialization variable and instantiates itself.  
+
+(Note: You need not load TrackJS in the `<head>` tag, though we do recommend that you place our script as either the first script on the page, or the first script in your minified bundle. 
+
+```html
+<script type="text/javascript">
+    window._trackJs = {
+        token: "" // PUT YOUR TOKEN HERE
+        // More configuration...
+    };
+</script>
+<script type="text/javascript" src="https://d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js"></script>
+```

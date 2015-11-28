@@ -22,7 +22,7 @@ This will also work just fine with the r.js optimizer.
 ```html
 <script>
     // The important thing is to load the config before the tracker script.  
-    // Require will ensure they're excuted in order
+    // Require will ensure they're executed in order
     require(["scripts/trackerConfig","scripts/tracker"], function (){
         trackJs.track("Using Require to load TrackJs tracker script")
     })
