@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+dist/
+jspm_packages/
+bower_components/
+_site
+.sass-cache
+.jekyll-metadata
+.idea

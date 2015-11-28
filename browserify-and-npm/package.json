@@ -1,0 +1,19 @@
+{
+  "name": "browserify-and-npm",
+  "version": "1.0.0",
+  "description": "An example of using the TrackJS npm package with Browserify",
+  "author": "TrackJS",
+  "browserify-shim": {
+    "trackjs": "trackJs"
+  },
+  "browserify": {
+    "transform": [ "browserify-shim" ]
+  },
+  "dependencies": {
+    "trackjs": "^2.1.14"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "browserify-shim": "^3.8.10"
+  }
+}

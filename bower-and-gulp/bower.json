@@ -1,0 +1,20 @@
+{
+  "name": "bower-and-gulp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/TrackJs/Docs",
+  "description": "Using Bower and Gulp to bundle TrackJS",
+  "main": "gulpfile.js",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "trackjs": "~2.1.14"
+  }
+}

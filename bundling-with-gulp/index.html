@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TrackJS Bundling with Gulp Example</title>
+	<script type="text/javascript" src="/dist/bundle.js"></script>
+</head>
+
+<body>
+    This is an example of bundling several scripts together.  On page load we do some things that result in an error.  Check out your console.
+    <script>
+    	// Make sure things work.
+    	trackJs.track("This is a gulp bundle example!");
+
+    	// There is a bug in this code that will cause an error to be tracked.
+    	var car = new Car("Tesla", "Model S");
+    	car.drive();
+    </script>
+</body>
+</html>

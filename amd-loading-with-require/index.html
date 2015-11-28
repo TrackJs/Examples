@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loading TrackJS with AMD and Require.js</title>
+    <script type="text/javascript" src="/scripts/require.js"></script>
+    <script>
+    	// Just make sure require gets the scripts every time, in case you make changes.
+    	require.config({
+    		urlArgs: Math.random() + ""
+    	})
+    </script>
+</head>
+
+<body>
+    This is an example of using Require.js to load the TrackJS script.  Make sure you specify your token in trackjsConfig.js.
+
+    <script>
+    	// The important thing is to load the config before the tracker script.  
+    	// Require will ensure they're excuted in order
+    	require(["scripts/trackerConfig","scripts/tracker"], function (){
+    		trackJs.track("Using Require to load TrackJs tracker script")
+    	})
+    </script>
+</body>
+</html>
