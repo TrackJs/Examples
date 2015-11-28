@@ -6,7 +6,7 @@ var concat = require("gulp-concat");
 
 
 gulp.task("bundle", function () {
-    gulp.src(["./scripts/trackerConfig.js", "./scripts/*.js"]) 
+	gulp.src(["./scripts/trackerConfig.js", "./scripts/tracker.js", "./scripts/*.js"])
     .pipe(uglify())
     .pipe(concat("bundle.js"))
     .pipe(gulp.dest("./dist/"));
