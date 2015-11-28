@@ -12,3 +12,19 @@ npm install --global http-server
 http-server
 # Navigate to localhost:8080
 ```
+
+#### What makes it work?
+
+TrackJS needs a configuration object initialized before the script loads.  To accommodate this with Require we need to load a simple module first that contains all the configuration data, then load the tracker script itself.  Check out `/scripts/trackerConfig.js` for an example.
+
+This will also work just fine with the r.js optimizer.
+
+```html
+<script>
+    // The important thing is to load the config before the tracker script.  
+    // Require will ensure they're excuted in order
+    require(["scripts/trackerConfig","scripts/tracker"], function (){
+        trackJs.track("Using Require to load TrackJs tracker script")
+    })
+</script>
+```
