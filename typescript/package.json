@@ -1,0 +1,19 @@
+{
+  "name": "trackjs-integration-typescript",
+  "version": "1.0.0",
+  "description": "An example of using the TrackJS npm package with TypeScript",
+  "author": "TrackJS",
+  "repository": {
+		"type": "git",
+		"url": "git://github.com/TrackJs/js-integrations/js-integrations.git"
+	},
+  "dependencies": {
+    "trackjs": "^2.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10"
+  },
+  "scripts": {
+    "typescript": "node_modules/typescript/bin/tsc ./example.ts --outDir dist/ --sourcemap"
+  }
+}
