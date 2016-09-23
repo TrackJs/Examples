@@ -10,3 +10,5 @@ This repository has several live code examples for various JavaScript integratio
 * [Browserify](./browserify-and-npm) - Bundling TrackJS with your app bundle using Browserify
 * [Bower](./bower-and-gulp) - Uses Gulp to bundle TrackJS, other bower components and your application
 * [JSPM and Babel](./jspm-with-babel) - Shows how to use TrackJS with UMD and ES6 
+* [TypeScript](./typescript) - Use TrackJS TypeScript definitions
+ 
