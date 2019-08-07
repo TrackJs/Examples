@@ -12,8 +12,7 @@ import { TrackJS } from '../util/trackjs-isomorphic';
 // we need to check that we have not already installed into the environment.
 if (!TrackJS.isInstalled()) {
   TrackJS.install({
-    errorURL: "https://dev-capture.trackjs.com/capture",
-    token: "8de4c78a3ec64020ab2ad15dea1ae9ff",
+    token: "your_token",
     onError: (payload) => {
       // we caught an error!
       // you can manipulate it by inspecting the *payload*

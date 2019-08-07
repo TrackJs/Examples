@@ -4,8 +4,7 @@ const { TrackJS } = require("trackjs-node");
 const pkg = require("./package.json");
 
 TrackJS.install({
-  errorURL: "https://dev-capture.trackjs.com/capture",
-  token: "8de4c78a3ec64020ab2ad15dea1ae9ff",
+  token: "your_token",
   onError: (payload) => {
     // we caught an error!
     // you can manipulate it by inspecting the *payload*
