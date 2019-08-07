@@ -1,0 +1,25 @@
+{
+  "name": "trackjs-express-example",
+  "version": "1.0.0",
+  "description": "TrackJS express agent example",
+  "keywords": ["trackjs", "express", "error", "debug", "monitoring", "logging"],
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrackJs/jsintegrations.git"
+  },
+  "author": {
+    "name": "TrackJS",
+    "email": "hello@trackjs.com",
+    "url": "https://trackjs.com/"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "express": "4.17.1",
+    "trackjs-node": "0.0.5"
+  }
+}

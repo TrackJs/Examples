@@ -1,0 +1,36 @@
+{
+  "name": "trackjs-nextjs-example",
+  "version": "1.0.0",
+  "description": "TrackJS nextjs agent example",
+  "keywords": [
+    "trackjs",
+    "next",
+    "error",
+    "debug",
+    "monitoring",
+    "logging"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "next build && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrackJs/jsintegrations.git"
+  },
+  "author": {
+    "name": "TrackJS",
+    "email": "hello@trackjs.com",
+    "url": "https://trackjs.com/"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "express": "4.17.1",
+    "next": "8.1.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "trackjs": "3.3.0",
+    "trackjs-node": "0.0.5"
+  }
+}

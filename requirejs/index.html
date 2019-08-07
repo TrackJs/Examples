@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TrackJS RequireJS Example</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <script>
+        // The important thing is to load the config before the tracker script.
+        // Require will ensure they're excuted in order
+        require(["scripts/trackjs-config", "node_modules/trackjs/index.umd.js"], function(config, TrackJS) {
+            TrackJS.install(config);
+        })
+    </script>
+</head>
+
+<body>
+    <h1>TrackJS RequireJS Example</h1>
+    <div>
+        <button type="button" onclick="javascript:throw new Error('oops');">Throw Error</button>
+    </div>
+</body>
+</html>

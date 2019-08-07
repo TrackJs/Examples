@@ -1,14 +1,21 @@
-# TrackJS JavaScript Integrations
+<p align="center">
+  <a href="https://trackjs.com/" target="_blank" align="center">
+    <img src="https://trackjs.com/assets/images/brand/logo_full_charcoal_red.svg" width="280">
+  </a>
+  <br />
+</p>
 
-This repository has several live code examples for various JavaScript integrations with TrackJS.  Each sub-folder has a descriptive README with more information.
+# TrackJS Usage and Integration Examples
 
-### Build Integrations
-* [Basic](./basic/) - Simplest example possible.
-* [AMD and RequireJS](./amd-loading-with-require) - Integrate TrackJS with a RequireJS/AMD workflow
-* [Bundling with Gulp](./bundling-with-gulp) - Adding TrackJS to a minified script bundle using Gulp
-* [Webpack and NPM](./webpack-and-npm) - Uses exports-loader to make loading TrackJS via NPM seamless
-* [Browserify](./browserify-and-npm) - Bundling TrackJS with your app bundle using Browserify
-* [Bower](./bower-and-gulp) - Uses Gulp to bundle TrackJS, other bower components and your application
-* [JSPM and Babel](./jspm-with-babel) - Shows how to use TrackJS with UMD and ES6 
-* [TypeScript](./typescript) - Use TrackJS TypeScript definitions
- 
+This repository contains example projects for using and integrating the TrackJS Error Monitoring agents with common JavaScript patterns and frameworks.
+
+## Reference
+
+- [TrackJS Browser Agent Documentation](https://docs.trackjs.com/browser-agent/installation/)
+- [TrackJS Node Agent Documentation](https://docs.trackjs.com/node-agent/installation/)
+
+## Examples
+
+* [Express](./express/)
+* [NextJS](./nextjs/)
+* [RequireJS](./requirejs/)
