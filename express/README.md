@@ -15,7 +15,7 @@ Integrating Express with the TrackJS Node Agent.
 
 ## Usage
 
-```
+```bash
 npm install
 npm start
 ```
