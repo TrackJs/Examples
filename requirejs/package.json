@@ -4,7 +4,7 @@
   "description": "TrackJS RequireJS agent example",
   "keywords": [
     "trackjs",
-    "next",
+    "requirejs",
     "error",
     "debug",
     "monitoring",
