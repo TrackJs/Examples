@@ -5,12 +5,20 @@
   <br />
 </p>
 
-# TrackJS Usage and Integration Examples
+# TrackJS Express Integration Example
 
-This repository contains example projects for using and integrating the TrackJS Error Monitoring agents with common JavaScript patterns and frameworks.
+Integrating Express with the TrackJS Node Agent.
 
 ## Reference
 
-- [TrackJS Browser Agent Documentation](https://docs.trackjs.com/browser-agent/installation/)
 - [TrackJS Node Agent Documentation](https://docs.trackjs.com/node-agent/installation/)
+
+## Usage
+
+```
+npm install
+npm start
+```
+
+Visit `http://localhost:3000/` to load a page and generate requests.
 

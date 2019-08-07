@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TrackJS Express Example</title>
+    <script>
+      function expressSuccess() {
+        fetch("/api/ok");
+      }
+      function expressError() {
+        fetch("api/error");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>TrackJS Express Example</h1>
+    <div>
+      <button type="button" onclick="expressSuccess()">Successful Express Request</button>
+      <button type="button" onclick="expressError()">Error Express Request</button>
+    </div>
+  </body>
+</html>
