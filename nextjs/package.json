@@ -30,7 +30,7 @@
     "next": "8.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "trackjs": "3.3.0",
-    "trackjs-node": "0.0.5"
+    "trackjs": "^3.4.0-canary.299",
+    "trackjs-node": "0.0.7"
   }
 }

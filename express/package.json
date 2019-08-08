@@ -2,7 +2,14 @@
   "name": "trackjs-express-example",
   "version": "1.0.0",
   "description": "TrackJS express agent example",
-  "keywords": ["trackjs", "express", "error", "debug", "monitoring", "logging"],
+  "keywords": [
+    "trackjs",
+    "express",
+    "error",
+    "debug",
+    "monitoring",
+    "logging"
+  ],
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -20,6 +27,6 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "express": "4.17.1",
-    "trackjs-node": "0.0.5"
+    "trackjs-node": "0.0.7"
   }
 }
