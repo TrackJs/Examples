@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TrackJs/jsintegrations.git"
+    "url": "git+https://github.com/TrackJs/Examples.git"
   },
   "author": {
     "name": "TrackJS",
@@ -30,7 +30,7 @@
     "next": "8.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "trackjs": "^3.4.0-canary.299",
-    "trackjs-node": "0.0.7"
+    "trackjs": "3.4.0",
+    "trackjs-node": "0.0.10"
   }
 }

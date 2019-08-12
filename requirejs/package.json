@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TrackJs/jsintegrations.git"
+    "url": "git+https://github.com/TrackJs/Examples.git"
   },
   "author": {
     "name": "TrackJS",
@@ -26,6 +26,6 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "http-server": "0.11.1",
-    "trackjs": "3.3.0"
+    "trackjs": "3.4.0"
   }
 }
