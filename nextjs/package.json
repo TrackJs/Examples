@@ -30,7 +30,7 @@
     "next": "8.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "trackjs": "3.4.0",
-    "trackjs-node": "0.0.10"
+    "trackjs": "3.6.0",
+    "trackjs-node": "0.0.11"
   }
 }

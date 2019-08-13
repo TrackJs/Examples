@@ -27,6 +27,6 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "express": "4.17.1",
-    "trackjs-node": "0.0.10"
+    "trackjs-node": "0.0.11"
   }
 }

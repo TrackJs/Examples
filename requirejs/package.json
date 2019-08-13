@@ -26,6 +26,6 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "http-server": "0.11.1",
-    "trackjs": "3.4.0"
+    "trackjs": "3.6.0"
   }
 }
