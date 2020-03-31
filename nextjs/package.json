@@ -27,7 +27,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "express": "4.17.1",
-    "next": "8.1.0",
+    "next": "9.3.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "trackjs": "3.6.0",
