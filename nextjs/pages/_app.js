@@ -4,12 +4,9 @@
  * to use an isomorphic adapter to switch between agents.
  */
 
-import React from 'react';
-import App, { Container } from 'next/app';
-import { TrackJS } from '../util/trackjs-isomorphic';
+import App from "next/app";
+import { TrackJS } from "../util/trackjs-isomorphic.js";
 
-// Because this may run multiple times due to client-side loading or server pages
-// we need to check that we have not already installed into the environment.
 if (!TrackJS.isInstalled()) {
   TrackJS.install({
     token: "your_token",
@@ -18,7 +15,7 @@ if (!TrackJS.isInstalled()) {
       // you can manipulate it by inspecting the *payload*
       // @see https://docs.trackjs.com/data-api/capture/#request-payload
 
-      console.log("we caught an error", payload);
+      console.log("we caught an error. See the integration in _app.js for details.", payload);
 
       // returning false will ignore the error
       return true;
@@ -26,33 +23,15 @@ if (!TrackJS.isInstalled()) {
   });
 }
 
-class MyApp extends App {
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
 
-  static async getInitialProps({ Component, ctx }) {
-      let pageProps = {};
-
-      if (Component.getInitialProps) {
-        pageProps = await Component.getInitialProps(ctx);
-      }
-
-      return { pageProps };
-  }
-
-  componentDidCatch (error, errorInfo) {
-    // This is where TrackJS hooks in. The rest of this class is boilerplate.
-    TrackJS.track(error);
-    this.setState({ error });
-  }
-
-  render() {
-    const { Component, pageProps } = this.props;
-
-    return (
-      <Container>
-        <Component {...pageProps} />
-      </Container>
-    );
-  }
+// Standard React extension point for capturing errors.
+MyApp.componentDidCatch = (error, errorInfo) => {
+  TrackJS.track(error);
+  this.setState({ error });
+  // Anything else you want to do with the error.
 }
 
 export default MyApp;
