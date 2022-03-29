@@ -27,11 +27,4 @@ function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-// Standard React extension point for capturing errors.
-MyApp.componentDidCatch = (error, errorInfo) => {
-  TrackJS.track(error);
-  this.setState({ error });
-  // Anything else you want to do with the error.
-}
-
 export default MyApp;
