@@ -23,15 +23,18 @@ if (!TrackJS.isInstalled()) {
   });
 }
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+class MyApp extends App {
 
-// Standard React extension point for capturing errors.
-MyApp.componentDidCatch = (error, errorInfo) => {
-  TrackJS.track(error);
-  this.setState({ error });
-  // Anything else you want to do with the error.
+  componentDidCatch(error, errorInfo) {
+    TrackJS.track(error);
+    this.setState({ error });
+    // Anything else you want to do with the error.
+  }
+
+  render() {
+    const { Component, pageProps } = this.props;
+    return <Component {...pageProps} />
+  }
 }
 
 export default MyApp;
