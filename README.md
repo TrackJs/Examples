@@ -16,6 +16,7 @@ This repository contains example projects for using and integrating the TrackJS 
 
 ## Examples
 
+* [NextJS 14+](./nextjs14/)
+* [NextJS (old)](./nextjs9/)
 * [Express](./express/)
-* [NextJS](./nextjs/)
 * [RequireJS](./requirejs/)
