@@ -5,13 +5,13 @@
   <br />
 </p>
 
-# TrackJS NextJS14 Integration Example
+# TrackJS NextJS15 Integration Example
 
-Integrating NextJS 14+ with the TrackJS Agents.
+Integrating NextJS 15+ with TrackJS using the `trackjs-nextjs` package.
 
 ## Reference
 
-- [NextJS Integration Docs](https://docs.trackjs.com/browser-agent/integrations/legacy/nextjs14/)
+- [NextJS Integration Docs](https://docs.trackjs.com/browser-agent/integrations/nextjs15/)
 - [TrackJS Browser Agent Documentation](https://docs.trackjs.com/browser-agent/)
 - [TrackJS Node Agent Documentation](https://docs.trackjs.com/node-agent/)
 
