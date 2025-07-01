@@ -37,17 +37,35 @@
 
         // TrackJS<>Axios Integration to pass request details to TrackJS
         axios.interceptors.response.use(
-            (resp) => resp,
+            (response) => response,
             (error) => {
+                // Optional: Log request headers (be careful with sensitive data!)
+                if (error.config && error.config.headers) {
+                    TrackJS.console.info({
+                        "request": {
+                            headers: error.config.headers,
+                            body: error.config.data
+                        }
+                    });
+                }
 
-                // Optional: Include request headers or body. Note that this may contain sensitive information not appropriate for storage in TrackJS.
-                //TrackJS.console.info(error.config.headers);
-                //TrackJS.console.info(error.config.data);
+                // Optional: Log response details if available (be careful with sensitive data!)
+                if (error.response) {
+                    TrackJS.console.info({
+                        "response": {
+                            headers: error.response.headers,
+                            body: error.response.data
+                        }
+                    });
+                }
 
-                // Capture a formatted error with method and URL
-                TrackJS.track(`Network Error ${error.config.method.toUpperCase()}: ${error.config.url}`)
+                // Capture formatted error with method and URL
+                if (error.config && error.config.method && error.config.url) {
+                    TrackJS.track(`Network Error ${error.config.method.toUpperCase()}: ${error.config.url}`);
+                } else {
+                    TrackJS.track(error);
+                }
 
-                // Expose the error for other services to capture
                 return Promise.reject(error);
             }
         );
