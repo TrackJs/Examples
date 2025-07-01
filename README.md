@@ -16,6 +16,7 @@ This repository contains example projects for using and integrating the TrackJS 
 
 ## Examples
 
+* [Axios](./axios/)
 * [NextJS 15+](./nextjs15/)
 * [NextJS 14](./nextjs14/)
 * [NextJS (old)](./nextjs9/)

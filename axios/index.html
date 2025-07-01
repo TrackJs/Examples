@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>TrackJS - Axios Global Error Example</title>
+</head>
+
+<body class="container">
+    <h1>TrackJS Axios Integration</h1>
+    <div>
+        <p>
+            TrackJS will integrate with Axios automatically and capture failed network
+            requests as errors. However, in certain conditions, Axios has extra information
+            about errors that it can share with TrackJS.
+        </p>
+        <p>
+            These examples show you how to wire this extra data into TrackJS.
+        </p>
+        <p>
+            Inspect page source for details.
+        </p>
+    </div>
+
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.10.0/axios.min.js"
+        integrity="sha512-WkZrEcQ5LMyNy6Y2PQf+Tu3vMcsmKKRKuPXtJSTHQJ3mpuvLRlA5dlDDhrrcXfyWr6Z/y3wIMfjfqVFO/gDZYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script>
+        window.TrackJS && TrackJS.install({
+            token: "demo-token"
+        });
+
+        // This will trigger a "Network Error"
+        axios.get('https://bad.trackjs.com/');
+
+        // TrackJS<>Axios Integration to pass request details to TrackJS
+        axios.interceptors.response.use(
+            (resp) => resp,
+            (error) => {
+
+                // Optional: Include request headers or body. Note that this may contain sensitive information not appropriate for storage in TrackJS.
+                //TrackJS.console.info(error.config.headers);
+                //TrackJS.console.info(error.config.data);
+
+                // Capture a formatted error with method and URL
+                TrackJS.track(`Network Error ${error.config.method.toUpperCase()}: ${error.config.url}`)
+
+                // Expose the error for other services to capture
+                return Promise.reject(error);
+            }
+        );
+
+        // This will trigger a detailed "Network Error GET: https://bad2.trackjs.com/"
+        axios.get('https://bad2.trackjs.com/');
+    </script>
+
+</body>
+
+</html>
